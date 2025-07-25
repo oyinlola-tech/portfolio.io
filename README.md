@@ -66,7 +66,7 @@ I'm currently focused on:
 ## 🛠 How to View the Website
 
 The portfolio is hosted using **GitHub Pages**. You can view it live here:  
-🔗 [**Visit My Live Portfolio**](#)
+🔗 [**Visit My Live Portfolio**](https://portfolio-io-ashen.vercel.app/)
 
 ---
 
