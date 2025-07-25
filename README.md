@@ -66,7 +66,7 @@ I'm currently focused on:
 ## 🛠 How to View the Website
 
 The portfolio is hosted using **GitHub Pages**. You can view it live here:  
-🔗 [**Visit My Live Portfolio**](#) *(Replace this with your GitHub Pages link once deployed)*
+🔗 [**Visit My Live Portfolio**](#)
 
 ---
 
