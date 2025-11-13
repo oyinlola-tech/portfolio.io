@@ -1,7 +1,96 @@
-# 🌟 Oluwayemi Oyinlola Michael – Personal Portfolio Website
+ # Oluwayemi Oyinlola Michael — Portfolio (portfolio.io)
 
-Welcome to the repository of my **personal portfolio website**, a custom-built project showcasing my skills, experience, personality, and journey into the tech world. This website was designed and developed using only **HTML**, **CSS**, and **JavaScript** — no frameworks or templates — to reflect my commitment to learning the fundamentals of front-end development and design.
+ This repository contains a lightweight, hand-coded personal portfolio website built with plain HTML, CSS and JavaScript. It showcases projects, skills, experience, and contact information.
 
+If you'd like a quick preview, open `index.html` in your browser or serve the folder with a simple static server.
+
+---
+
+## Quick links
+
+- Live demo: (if deployed) — check your GitHub Pages / Vercel deployment
+- Source: this repository
+
+---
+
+## What you'll find here
+
+- A responsive single-page portfolio (sections: Home, About, Skills, Experience, Projects, Contact)
+- Custom CSS for layout, responsive behavior and simple effects
+- Vanilla JavaScript for navigation, animations, and small UI interactions
+
+---
+
+## Tech stack
+
+- HTML5
+- CSS3 (modern layout + responsive rules)
+- JavaScript (vanilla)
+
+---
+
+## Run locally
+
+1. Clone or download this repository.
+2. Open `index.html` in your browser, or serve the folder to avoid any asset restrictions.
+
+Examples (PowerShell):
+
+```powershell
+# Python 3 builtin server (recommended):
+python -m http.server 8000
+
+# Or with Node/npm (if you have `serve` installed):
+npx serve .
+```
+
+Then open http://localhost:8000 in your browser.
+
+---
+
+## Project structure
+
+```text
+portfolio.io/
+├── index.html         # Main page
+├── css/
+│   └── style.css      # All styles
+├── js/
+│   └── script.js      # Page scripts
+├── images/            # (optional) profile and project images
+└── README.md          # This file
+```
+
+Notes: your project files may be in slightly different paths (e.g. `oyin.jpg` lives in the repo root).
+
+---
+
+## Edit tips
+
+- Hero image: replace `oyin.jpg` in the project root with a new image (keep the same filename or update `index.html`).
+- Content: edit `index.html` to change text, add projects, or update contact links.
+- Styles: update `css/style.css` to tweak colors, spacing, and responsive breakpoints.
+- JS: `js/script.js` handles simple behaviors (nav toggle, skill bar animation, tilt effect).
+
+---
+
+## Accessibility and performance
+
+- Keep headings semantic and images with `alt` text for accessibility.
+- Optimize images (resize and compress) to improve load speed.
+
+---
+
+## Contact
+
+- Email: donrichy141@gmail.com
+- LinkedIn: https://www.linkedin.com/in/oluwayemioyinlola
+
+If you'd like any changes to the README (format, badges, live demo link update), tell me which details to include and I will update it.
+
+---
+
+© 2025 Oluwayemi Oyinlola Michael
 ---
 
 ## 👋🏽 About Me

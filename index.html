@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oluwayemi Oyinlola | Front-End Developer & Cybersecurity Enthusiast</title>
-    <meta name="description" content="Portfolio of Oluwayemi Oyinlola - Front-End Developer, Cybersecurity Enthusiast and founder of Zudomart. Explore projects, skills and contact information.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="canonical" href="portfolio-io-ashen.vercel.app/" />
+    <meta name="description" content="Portfolio of Oluwayemi Oyinlola - Front-End Developer, Cybersecurity Enthusiast, Virtual Assistant, and founder of Zudomart. Explore projects, skills, experience, and contact information.">
     <link rel="icon" type="image/jpg" href="oyin.jpg">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -17,10 +16,12 @@
         <div class="container">
             <nav>
                 <div class="logo">OYINLOLA<span>Dev</span></div>
+                <button class="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
                 <div class="nav-links">
-                    <a href="#home">Home</a>
+                    <a href="#home" class="active">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
@@ -29,16 +30,14 @@
     </header>
 
     <!-- Hero Section -->
-     <br>
-     <br>
     <section id="home" class="hero">
-        <div class="container">
+        <div class="container hero-container">
             <div class="hero-content">
-                <div class="tagline">Frontend Developer | Cybersecurity Learner | Founder of Zudomart</div>
+                <div class="tagline" id="typed-tagline">Frontend Developer | Cybersecurity Learner | Founder of Zudomart</div>
                 <h1>Hello, I'm <span>Oluwayemi Oyinlola Michael</span></h1>
-                <p>I'm an entry-level frontend developer and certified virtual assistant with a passion for crafting engaging digital experiences and securing them with strong cybersecurity principles. I’m currently developing a multi-purpose platform for African entrepreneurs called <strong>Zudomart</strong>, where innovation meets opportunity.</p>
+                <p>Self-taught Front-End Developer, certified Virtual Assistant, and aspiring Cybersecurity Specialist. I build interactive, secure web experiences and currently lead <strong>Zudomart</strong>, a multi-purpose platform empowering African entrepreneurs.</p>
                 <div class="hero-btns">
-                    <a href="#contact" class="btn">Hire Me</a>
+                    <a href="doc\oluwayemi-oyinlola-resume.pdf" target="_blank" class="btn">CV</a>
                     <a href="#projects" class="btn btn-secondary">See My Work</a>
                 </div>
             </div>
@@ -56,37 +55,24 @@
             <h2 class="section-title">My Journey</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>From Passion to Profession</h3>
-                    <p>My tech journey began with a fascination for how websites work. As a self-taught developer, I earned certifications in frontend development while simultaneously training as a virtual assistant. This unique combination allows me to approach projects with both technical expertise and organizational efficiency.</p>
-                    
-                    <p>While building my development skills, I discovered cybersecurity through a friend who worked in penetration testing. The idea of protecting digital assets resonated with me deeply. Some months ago, I began formal cybersecurity training to complement my development skills.</p>
-                    
-                    <p>What drives me is the belief that beautiful interfaces should also be secure interfaces. I'm currently deepening my knowledge in networking fundamentals, threat analysis, and security best practices to become a well-rounded tech professional.</p>
-                    
-                    <h3>My Philosophy</h3>
-                    <p>I believe in continuous learning and growth. Technology evolves rapidly, and staying curious is key. My approach combines:</p>
-                    <ul>
-                        <li><strong>Design Thinking:</strong> Creating intuitive user experiences</li>
-                        <li><strong>Clean Code:</strong> Building maintainable, efficient solutions</li>
-                        <li><strong>Security Mindset:</strong> Implementing best practices from the start</li>
-                        <li><strong>Client Focus:</strong> Understanding needs to deliver value</li>
-                    </ul>
+                    <h3>From Curiosity to Expertise</h3>
+                    <p>My journey started with curiosity about websites and applications. Over the years, I mastered frontend development, gained virtual assistant certifications, and began exploring cybersecurity for real-world application.</p>
                     <h3>Current Focus: Zudomart</h3>
-<p>I’m currently building <strong>Zudomart</strong>, a dynamic web platform that combines features from Fiverr, TikTok, Jumia, and Twitch to empower African entrepreneurs, students, and creators. As the lead front-end developer, I’ve designed an intuitive and scalable UI hosted on Vercel. Zudomart aims to be more than just a marketplace — it’s a hub for collaboration, content, and commerce. You can <a href="https://zudomart.rf.gd/pages/landing_page.html" target="_blank">explore the live demo here</a> and <a href="https://docs.google.com/presentation/d/1VwHvEXf6CsbHQ5_cZShPq8BC9Bzt8wLzLz9iJbVGpng/edit?usp=drivesdk" target="_blank">view the pitch deck here</a>.</p>
+                    <p>Zudomart is a multi-purpose platform combining freelance services, content, e-commerce, and live streaming for African entrepreneurs. I lead front-end development, ensuring smooth user experiences, secure payments, and advanced UI features like live streams, chat, and POS dashboard.</p>
                     <div class="about-stats">
                         <div class="stat-card">
                             <i class="fas fa-laptop-code"></i>
-                            <h4>6+</h4>
+                            <h4>10+</h4>
                             <p>Projects Completed</p>
                         </div>
                         <div class="stat-card">
                             <i class="fas fa-certificate"></i>
-                            <h4>4</h4>
+                            <h4>5</h4>
                             <p>Certifications</p>
                         </div>
                         <div class="stat-card">
                             <i class="fas fa-book"></i>
-                            <h4>200+</h4>
+                            <h4>500+</h4>
                             <p>Hours of Learning</p>
                         </div>
                         <div class="stat-card">
@@ -103,126 +89,100 @@
     <!-- Skills Section -->
     <section id="skills">
         <div class="container">
-            <h2 class="section-title">My Expertise</h2>
+            <h2 class="section-title">Expertise & Skills</h2>
             <div class="skills-container">
                 <div class="skill-category">
                     <h3><i class="fab fa-html5"></i> Frontend Development</h3>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span>HTML5 & CSS3</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
+                        <div class="skill-info"><span>HTML5 & CSS3</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90%"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span>JavaScript</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
-                        </div>
+                        <div class="skill-info"><span>JavaScript & DOM</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="85%"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Responsive Design</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
+                        <div class="skill-info"><span>Responsive & Mobile-first</span><span>88%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="88%"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span>UI/UX Principles</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
-                        </div>
+                        <div class="skill-info"><span>UI/UX Principles</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="80%"></div></div>
                     </div>
                 </div>
 
                 <div class="skill-category">
                     <h3><i class="fas fa-headset"></i> Virtual Assistance</h3>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Administrative Support</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
+                        <div class="skill-info"><span>Admin Support</span><span>95%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="95%"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Email Management</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
+                        <div class="skill-info"><span>Email & Calendar Management</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="90%"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Calendar Management</span>
-                            <span>88%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 88%"></div>
-                        </div>
+                        <div class="skill-info"><span>Customer Support</span><span>92%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="92%"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Customer Support</span>
-                            <span>92%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 92%"></div>
-                        </div>
+                        <div class="skill-info"><span>Project Coordination</span><span>88%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="88%"></div></div>
                     </div>
                 </div>
 
                 <div class="skill-category">
                     <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Networking Fundamentals</span>
-                            <span>65%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 65%"></div>
-                        </div>
+                        <div class="skill-info"><span>Networking Fundamentals</span><span>70%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="70%"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Security Principles</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 60%"></div>
-                        </div>
+                        <div class="skill-info"><span>Threat Analysis</span><span>65%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="65%"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Threat Awareness</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
-                        </div>
+                        <div class="skill-info"><span>Data Protection & Encryption</span><span>75%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="75%"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Data Protection</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
-                        </div>
+                        <div class="skill-info"><span>Kali Linux Tools</span><span>60%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="60%"></div></div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <h3>Founder | Zudomart</h3>
+                    <span>2025 - Present</span>
+                    <p>Leading the development of Zudomart, a multi-purpose platform for African entrepreneurs. </p>
+                </div>
+                <div class="experience-card">
+                    <h3>Cybersecurity Installation | OAUSTECH</h3>
+                    <span>2025</span>
+                    <p>Installed and configured Kali Linux and cybersecurity tools for student labs, ensuring hands-on training environments and secure systems setup.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>Front-End Volunteer Developer</h3>
+                    <span>2023</span>
+                    <p>Built responsive websites and interactive web features for multiple clients, focusing on modern design, performance, and accessibility.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>Virtual Assistant Certification Projects</h3>
+                    <span>2022</span>
+                    <p>Completed ALX virtual assistant practical projects, including administrative support, calendar management, client communication, and small-scale project coordination.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>Freelance Mini Projects</h3>
+                    <span>2021-2023</span>
+                    <p>Developed small web applications for local businesses and startups, integrating UI improvements, responsive layouts, and basic security considerations.</p>
                 </div>
             </div>
         </div>
@@ -231,58 +191,69 @@
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
+            <h2 class="section-title">Projects</h2>
             <div class="projects-container">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coding Project">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="E-commerce UI">
                     </div>
                     <div class="project-content">
                         <h3>Responsive E-commerce UI</h3>
-                        <p>A modern e-commerce interface with product filtering, cart functionality, and seamless checkout experience. Built with HTML, CSS, and JavaScript.</p>
+                        <p>Built a modern e-commerce platform with product filtering, cart, and checkout functionality using HTML, CSS, and JavaScript.</p>
                         <div class="project-tech">
                             <span>HTML5</span>
                             <span>CSS3</span>
                             <span>JavaScript</span>
                         </div>
-                        
                     </div>
                 </div>
-                
-              <div class="project-card">
-    <div class="project-image">
-        <img src="startup.jpg" alt="Zudomart Platform">
-    </div>
-    <div class="project-content">
-        <h3>Zudomart Platform</h3>
-        <p>A startup web platform bridging commerce, content, and freelance services for Africa's youth. Combines the functionality of Fiverr, Jumia, TikTok, and Twitch — all in one. Built with clean front-end code and designed for scalability.</p>
-        <div class="project-tech">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Responsive Design</span>
-        </div>
-        <div class="project-links">
-            <a href="https://zudomart.rf.gd/pages/landing_page.html" target="_blank" class="btn btn-secondary">Live Demo</a>
-            <br>
-            <a href="https://docs.google.com/presentation/d/1VwHvEXf6CsbHQ5_cZShPq8BC9Bzt8wLzLz9iJbVGpng/edit?usp=drivesdk" target="_blank" class="btn">Pitch Deck</a>
-        </div>
-    </div>
-</div>
-                
+
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1548092372-0d1bd40894a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Security Project">
+                        <img src="startup.jpg" alt="Zudomart Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3>Zudomart Platform</h3>
+                        <p>Multi-purpose platform combining freelance gigs, e-commerce, content, and live streaming for African entrepreneurs. Features include reels, stories, POS dashboard, escrow payments, and chat system.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://docs.google.com/presentation/d/10qkSdBBf6FSYqc_3om_-oAHa8KBHoiB-GlVYj6z4oKY/edit?usp=drivesdk" target="_blank" class="btn">Pitch Deck</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1548092372-0d1bd40894a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Security Portal">
                     </div>
                     <div class="project-content">
                         <h3>Security Awareness Portal</h3>
-                        <p>An educational platform teaching cybersecurity fundamentals. Includes interactive modules on password security, phishing, and data protection.</p>
+                        <p>Interactive educational platform teaching cybersecurity fundamentals, including password security, phishing, and data protection modules.</p>
                         <div class="project-tech">
                             <span>HTML/CSS</span>
                             <span>JavaScript</span>
                             <span>Security Concepts</span>
                         </div>
-                        
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Portfolio Mini Projects">
+                    </div>
+                    <div class="project-content">
+                        <h3>Freelance Mini Projects</h3>
+                        <p>Various small web applications and landing pages for local businesses, including responsive UI, animations, and minor interactivity.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -296,27 +267,21 @@
             <div class="contact-container">
                 <div class="contact-info">
                     <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="contact-details">
                             <h4>Location</h4>
                             <p>Okitipupa, Ondo State, Nigeria</p>
                         </div>
                     </div>
                     <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                         <div class="contact-details">
                             <h4>Email</h4>
                             <p>donrichy141@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
                         <div class="contact-details">
                             <h4>Phone</h4>
                             <p>+234 913 351 9489</p>
@@ -325,27 +290,15 @@
                 </div>
 
                 <div class="contact-options">
-                    <h3>Get in touch directly</h3>
-                    <p>I'm available for freelance opportunities, full-time positions, or collaborations. Feel free to reach out through any of these channels:</p>
-                    
+                    <h3>Get in Touch</h3>
+                    <p>Available for freelance, full-time, or collaborative opportunities. Reach out via email, WhatsApp, or LinkedIn.</p>
                     <div class="contact-buttons">
-                        <a href="mailto:donrichy141@gmail.com" class="contact-btn email-btn">
-                            <i class="fas fa-envelope"></i>
-                            <span>Send Email</span>
-                        </a>
-                        <a href="https://wa.me/+2349133519489" class="contact-btn whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>Message on WhatsApp</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/oluwayemioyinlola" class="contact-btn linkedin-btn">
-                            <i class="fab fa-linkedin-in"></i>
-                            <span>Connect on LinkedIn</span>
-                        </a>
+                        <a href="mailto:donrichy141@gmail.com" target="_blank" class="contact-btn email-btn"><i class="fas fa-envelope"></i><span>Send Email</span></a>
+                        <a href="https://wa.me/+2349133519489" target="_blank" class="contact-btn whatsapp-btn"><i class="fab fa-whatsapp"></i><span>Message on WhatsApp</span></a>
+                        <a href="https://www.linkedin.com/in/oluwayemioyinlola" target="_blank" class="contact-btn linkedin-btn"><i class="fab fa-linkedin-in"></i><span>Connect on LinkedIn</span></a>
                     </div>
-                    
                     <div class="availability">
-                        <i class="fas fa-circle"></i>
-                        <span>Currently available for new opportunities</span>
+                        <i class="fas fa-circle"></i><span>Currently available for new opportunities</span>
                     </div>
                 </div>
             </div>
@@ -356,17 +309,14 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/oluwayemioyinlola"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://x.com/oyinlola141"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/oyinlola.eth"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/oluwayemioyinlola" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://x.com/oyinlola141" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/oyinlola.eth" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
             <p class="copyright">© 2025 Oluwayemi Oyinlola. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
-
-
-
