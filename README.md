@@ -145,7 +145,7 @@ I'm currently focused on:
 
 ---
 
-## 📈 GitHub Stats
+## 📈 GitHub Stat
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=oyinlola-tech&show_icons=true&theme=dark)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=oyinlola-tech&layout=compact&theme=dark)
