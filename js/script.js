@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if(barPosition < screenPosition) {
                 bar.style.width = bar.dataset.progress; // width set from HTML data-progress
-                bar.style.animation = 'progress-shine 2s infinite';
+                bar.style.animation = 'progress-shine 5s infinite';
             }
         });
     };
@@ -118,3 +118,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+        window.onload = function() {
+            setTimeout(() => {
+                document.getElementById("loader").style.display = "none";
+            }, 5000);
+        };

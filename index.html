@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oluwayemi Oyinlola | Front-End Developer & Cybersecurity Enthusiast</title>
     <meta name="description" content="Portfolio of Oluwayemi Oyinlola - Front-End Developer, Cybersecurity Enthusiast, Virtual Assistant, and founder of Zudomart. Explore projects, skills, experience, and contact information.">
-    <link rel="icon" type="image/jpg" href="oyin.jpg">
+    <link rel="icon" type="image/jpg" href="img/oyin.jpg">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+    <div id="loader">
+        <div class="loader-box">
+            <p>Loading portfolio...</p>
+        </div>
+    </div>
+
     <!-- Header -->
     <header>
         <div class="container">
@@ -37,19 +44,20 @@
                 <h1>Hello, I'm <span>Oluwayemi Oyinlola Michael</span></h1>
                 <p>Self-taught Front-End Developer, certified Virtual Assistant, and aspiring Cybersecurity Specialist. I build interactive, secure web experiences and currently lead <strong>Zudomart</strong>, a multi-purpose platform empowering African entrepreneurs.</p>
                 <div class="hero-btns">
-                    <a href="doc\oluwayemi-oyinlola-resume.pdf" target="_blank" class="btn">CV</a>
+                    <a href="doc/oluwayemi-oyinlola-resume.pdf" target="_blank" class="btn">CV</a>
                     <a href="#projects" class="btn btn-secondary">See My Work</a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="profile-card">
-                    <img src="oyin.jpg" alt="Oluwayemi Oyinlola">
+                    <img src="img/oyin.jpg" alt="Oluwayemi Oyinlola">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
+    <!-- (No changes) -->
     <section id="about">
         <div class="container">
             <h2 class="section-title">My Journey</h2>
@@ -94,8 +102,8 @@
                 <div class="skill-category">
                     <h3><i class="fab fa-html5"></i> Frontend Development</h3>
                     <div class="skill-item">
-                        <div class="skill-info"><span>HTML5 & CSS3</span><span>90%</span></div>
-                        <div class="skill-bar"><div class="skill-progress" data-progress="90%"></div></div>
+                        <div class="skill-info"><span>HTML5 & CSS3</span><span>74%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-progress="74%"></div></div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-info"><span>JavaScript & DOM</span><span>85%</span></div>
@@ -109,6 +117,8 @@
                         <div class="skill-info"><span>UI/UX Principles</span><span>80%</span></div>
                         <div class="skill-bar"><div class="skill-progress" data-progress="80%"></div></div>
                     </div>
+                    <div class="skill-info"><span>NEXT.JS & NODE.JS</span><span>40%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" data-progress="40%"></div></div>
                 </div>
 
                 <div class="skill-category">
@@ -159,31 +169,50 @@
         <div class="container">
             <h2 class="section-title">Experience</h2>
             <div class="experience-container">
+
+
                 <div class="experience-card">
                     <h3>Founder | Zudomart</h3>
                     <span>2025 - Present</span>
                     <p>Leading the development of Zudomart, a multi-purpose platform for African entrepreneurs. </p>
                 </div>
+
                 <div class="experience-card">
                     <h3>Cybersecurity Installation | OAUSTECH</h3>
                     <span>2025</span>
                     <p>Installed and configured Kali Linux and cybersecurity tools for student labs, ensuring hands-on training environments and secure systems setup.</p>
                 </div>
+
                 <div class="experience-card">
                     <h3>Front-End Volunteer Developer</h3>
                     <span>2023</span>
                     <p>Built responsive websites and interactive web features for multiple clients, focusing on modern design, performance, and accessibility.</p>
                 </div>
+
                 <div class="experience-card">
                     <h3>Virtual Assistant Certification Projects</h3>
                     <span>2022</span>
-                    <p>Completed ALX virtual assistant practical projects, including administrative support, calendar management, client communication, and small-scale project coordination.</p>
+                    <p>Completed ALX virtual assistant projects including admin support, communication, and scheduling.</p>
                 </div>
+
                 <div class="experience-card">
                     <h3>Freelance Mini Projects</h3>
                     <span>2021-2023</span>
-                    <p>Developed small web applications for local businesses and startups, integrating UI improvements, responsive layouts, and basic security considerations.</p>
+                    <p>Developed small web applications for local businesses and startups.</p>
                 </div>
+
+                <div class="experience-card">
+                    <h3>Next.js Portfolio Deployment</h3>
+                    <span>2025</span>
+                    <p>Built and deployed a working Next portfolio including environment variables, api routes, and email handling.</p>
+                </div>
+
+                <div class="experience-card">
+                    <h3>Networking Practical Training</h3>
+                    <span>2024</span>
+                    <p>Completed advanced networking practicals including switching, routing, subnets, and security configuration.</p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -193,6 +222,7 @@
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="projects-container">
+
                 <div class="project-card">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="E-commerce UI">
@@ -210,11 +240,11 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="startup.jpg" alt="Zudomart Platform">
+                        <img src="/img/startup.jpg" alt="Zudomart Platform">
                     </div>
                     <div class="project-content">
                         <h3>Zudomart Platform</h3>
-                        <p>Multi-purpose platform combining freelance gigs, e-commerce, content, and live streaming for African entrepreneurs. Features include reels, stories, POS dashboard, escrow payments, and chat system.</p>
+                        <p>Multi-purpose platform combining gigs, marketplace, reels, stories, POS dashboard, chat, and livestreaming.</p>
                         <div class="project-tech">
                             <span>HTML</span>
                             <span>CSS</span>
@@ -222,7 +252,7 @@
                             <span>Responsive Design</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://docs.google.com/presentation/d/10qkSdBBf6FSYqc_3om_-oAHa8KBHoiB-GlVYj6z4oKY/edit?usp=drivesdk" target="_blank" class="btn">Pitch Deck</a>
+                            <a href="https://docs.google.com/presentation/d/10qkSdBBf6FSYqc_3om_-oAHa8KBHoiB-GlVYj6z4oKY" target="_blank" class="btn">Pitch Deck</a>
                         </div>
                     </div>
                 </div>
@@ -233,7 +263,7 @@
                     </div>
                     <div class="project-content">
                         <h3>Security Awareness Portal</h3>
-                        <p>Interactive educational platform teaching cybersecurity fundamentals, including password security, phishing, and data protection modules.</p>
+                        <p>Educational portal teaching cyber basics like phishing, passwords, and data safety.</p>
                         <div class="project-tech">
                             <span>HTML/CSS</span>
                             <span>JavaScript</span>
@@ -244,11 +274,11 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Portfolio Mini Projects">
+                        <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mini Projects">
                     </div>
                     <div class="project-content">
                         <h3>Freelance Mini Projects</h3>
-                        <p>Various small web applications and landing pages for local businesses, including responsive UI, animations, and minor interactivity.</p>
+                        <p>Various small web apps for businesses with responsive UI and animations.</p>
                         <div class="project-tech">
                             <span>HTML</span>
                             <span>CSS</span>
@@ -256,6 +286,37 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/hangman.jpg" alt="Hangman Game">
+                    </div>
+                    <div class="project-content">
+                        <h3>Modern Hangman Game</h3>
+                        <p>Interactive hangman game with on screen keyboard and clean animations.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                            <span>DOM Logic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/email-tool.jpg" alt="Email Tool">
+                    </div>
+                    <div class="project-content">
+                        <h3>Email Sending Tool</h3>
+                        <p>Built with Resend API and deployed on Vercel with functional email delivery.</p>
+                        <div class="project-tech">
+                            <span>Next</span>
+                            <span>API Routes</span>
+                            <span>Resend</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -265,6 +326,8 @@
         <div class="container">
             <h2 class="section-title">Let's Connect</h2>
             <div class="contact-container">
+
+                <!-- Original info kept -->
                 <div class="contact-info">
                     <div class="contact-card">
                         <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
@@ -292,15 +355,31 @@
                 <div class="contact-options">
                     <h3>Get in Touch</h3>
                     <p>Available for freelance, full-time, or collaborative opportunities. Reach out via email, WhatsApp, or LinkedIn.</p>
+
                     <div class="contact-buttons">
                         <a href="mailto:donrichy141@gmail.com" target="_blank" class="contact-btn email-btn"><i class="fas fa-envelope"></i><span>Send Email</span></a>
                         <a href="https://wa.me/+2349133519489" target="_blank" class="contact-btn whatsapp-btn"><i class="fab fa-whatsapp"></i><span>Message on WhatsApp</span></a>
                         <a href="https://www.linkedin.com/in/oluwayemioyinlola" target="_blank" class="contact-btn linkedin-btn"><i class="fab fa-linkedin-in"></i><span>Connect on LinkedIn</span></a>
                     </div>
+
                     <div class="availability">
                         <i class="fas fa-circle"></i><span>Currently available for new opportunities</span>
                     </div>
+
+                    <!-- Added contact form -->
+                    <div class="contact-form">
+                        <h3>Send a Direct Message</h3>
+                        <form id="portfolioForm">
+                            <input type="text" name="name" placeholder="Your name" required>
+                            <input type="text" name="subject" placeholder="Subject">
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <textarea name="message" placeholder="Your message" required></textarea>
+                            <button type="submit" class="btn">Send</button>
+                        </form>
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </section>
@@ -318,5 +397,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+
 </body>
 </html>
