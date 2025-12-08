@@ -41,12 +41,12 @@ export async function POST(request) {
       html: html,
     });
 
-    return Response.json({ success: true, id: sent.id }, { status: 200 });
+  return new Response(JSON.stringify({success: true, id: sent.id}), {status:200});
 
   } catch (error) {
     console.error("Email Error:", error);
-    return Response.json(
-      { error: "Something went wrong. Please try again later." },
+    return new Response(
+      JSON.stringify({ error: "Something went wrong. Please try again later." }),
       { status: 500 }
     );
   }
