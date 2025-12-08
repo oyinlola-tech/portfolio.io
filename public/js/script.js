@@ -119,8 +119,58 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-        window.onload = function() {
-            setTimeout(() => {
-                document.getElementById("loader").style.display = "none";
-            }, 5000);
-        };
+// Loading feature
+window.addEventListener('load', ()=>{
+    const loader = document.getElementById('loader');
+
+    setTimeout(()=>{
+        loader.style.opacity = '0';
+
+        setTimeout(()=>{
+            loader.remove();
+        }, 700); 
+    }, 500);
+});
+
+// Contact form submission
+
+ const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const data = {
+    name: document.getElementById("name").value.trim(),
+    email: document.getElementById("email").value.trim(),
+    subject: document.getElementById("subject").value.trim(),
+    message: document.getElementById("message").value.trim(),
+  };
+
+  const btn = form.querySelector("button");
+  const spinner = document.getElementById("customSpinner");
+
+  btn.disabled = true;
+  spinner.style.display = "block";
+
+  try {
+    const res = await fetch("/api/sendmail", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    const result = await res.json();
+
+    if (result.success) {
+      alert("Message sent successfully.");
+      form.reset();
+    } else {
+      alert(result.error || "Failed to send message.");
+    }
+  } catch (err) {
+    alert("There was an error. Please try again.");
+  }
+
+  btn.disabled = false;
+  spinner.style.display = "none";
+});

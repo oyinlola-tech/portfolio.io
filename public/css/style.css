@@ -600,11 +600,15 @@ section {
 }
 
 .whatsapp-btn {
-    background: linear-gradient(45deg, #25D366, #128C7E);
+    background: linear-gradient(45deg, #0b8236, #033c36);
 }
 
 .linkedin-btn {
     background: linear-gradient(45deg, #0077B5, #00A0DC);
+}
+
+.github-btn {
+    background: linear-gradient(45deg, #bed8e2, #6e62d8,);
 }
 
 .contact-btn:hover {
@@ -760,4 +764,161 @@ footer {
     .projects-container {
         grid-template-columns: 1fr;
     }
+}
+
+/* Loader wrapper */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    opacity: 1;
+    transition: opacity 0.7s ease;
+}
+
+/* Loader content */
+.loader-inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Spinning ring */
+.ring {
+    width:70px;
+    height:70px;
+    border: 6px solid rgba (255, 255, 255, 0.2);
+    border-top: 6px solid #FF6584;
+    border-radius: 50% ;
+    animation: spin 1s linear infinite, glow 1.5s ease infinite;
+}
+
+/* Text under loader */
+.loader-inner p {
+    margin-top: 15px;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Soft Glow animation */
+@keyframes glow{
+    0% {box-shadow: 0 0 5px #FF6584;}
+    50% {box-shadow: 0 0 20px #6c63ff;}
+    100% {box-shadow: 0 0 5px #FF6584;}
+}
+
+/* Contact Form wrapper */
+.contact-form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+/*Form Title*/
+.contact-form h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+    text-align: center;
+}
+
+/* Form Groups */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Form Labels */
+.form-group label {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 500;
+}
+
+/*Inputs + Textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.08); 
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/*  Focus Effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 12px rgba(255, 101, 132, 0.3);
+}
+
+/* Textarea height */
+.form-group textarea {
+    min-height: 140px;
+    resize: none;
+}
+
+/* Submit Button */
+.contact-form button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.25);
+}
+
+/* Button Hover Effect */
+.contact-form button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 25px rgba(108, 99, 255, 0.35);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#customSpinner {
+    display: none;
+    text-align: center ;
+    margin-top: 10px;
 }
