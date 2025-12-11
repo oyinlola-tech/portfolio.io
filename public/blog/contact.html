@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Contact · BrightLearn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><div class="logo">📚</div><div><h1>BrightLearn</h1><p class="tag">Smart tips for curious learners</p></div></div>
+      <nav class="nav"><a href="index.html">Home</a><a href="index.html#topics">Topics</a><a href="about.html">About</a><a class="active" href="contact.html">Contact</a></nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding:2rem 1rem">
+    <h2>Contact</h2>
+    <p class="muted">This is written by Oluwayemi Oyinlola for educational purpose</p>
+
+    <div style="margin-top:1rem;max-width:600px">
+      <label style="display:block;margin-bottom:.5rem">Your message</label>
+      <textarea style="width:100%;min-height:140px;padding:.75rem;border-radius:8px;border:1px solid #e6e9f0"></textarea>
+      <div style="margin-top:.75rem;display:flex;gap:.5rem">
+        <button class="btn">Send</button>
+        <a class="btn outline" href="index.html">Back</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><p>© <span id="year3"></span> BrightLearn</p></div></footer>
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>

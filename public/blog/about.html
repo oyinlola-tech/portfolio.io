@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>About · BrightLearn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><div class="logo">📚</div><div><h1>BrightLearn</h1><p class="tag">Smart tips for curious learners</p></div></div>
+      <nav class="nav"><a href="index.html">Home</a><a href="index.html#topics">Topics</a><a class="active" href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding:2rem 1rem">
+    <h2>About BrightLearn</h2>
+    <p class="muted">A playful, practical place for bite-sized education advice.</p>
+
+    <section style="margin-top:1rem">
+      <h3>Our mission</h3>
+      <p>To make learning accessible, evidence-based, and a little bit fun. We focus on practical tips that students, teachers and parents can apply right away.</p>
+
+      <h3 style="margin-top:.75rem">How to use this site</h3>
+      <ul>
+        <li>Browse the cards on the home page.</li>
+        <li>Click "Read More" to open a full article page.</li>
+      </ul>
+    </section>
+
+    <a class="btn" href="index.html">Back to Home</a>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><p>© <span id="year2"></span> BrightLearn</p><div class="socials"><a>🐦</a><a>📸</a></div></div></footer>
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
