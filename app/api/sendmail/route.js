@@ -1,4 +1,5 @@
 import { Resend } from "resend";
+require("dotenv").config();
 
 const resend = new Resend(process.env.RESEND_KEY);
 
