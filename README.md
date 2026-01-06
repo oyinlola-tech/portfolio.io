@@ -11,7 +11,7 @@ If you'd like a quick preview, open `index.html` in your browser or serve the fo
 - Live demo: (if deployed) — check your GitHub Pages / Vercel deployment
 - Source: this repository
 
----
+-
 
 ## What you'll find here
 
