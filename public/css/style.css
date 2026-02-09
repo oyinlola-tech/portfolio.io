@@ -1,10 +1,10 @@
 :root {
-    --primary: #6C63FF;
-    --secondary: #4A44C6;
-    --accent: #FF6584;
-    --dark: #2A2A3C;
-    --light: #F5F5FA;
-    --gray: #8A8AA3;
+    --primary: #0ea5e9;
+    --secondary: #6366f1;
+    --accent: #f59e0b;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --gray: #94a3b8;
     --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -16,7 +16,11 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    background:
+        radial-gradient(circle at 10% 20%, rgba(14, 165, 233, 0.2) 0%, transparent 35%),
+        radial-gradient(circle at 85% 15%, rgba(245, 158, 11, 0.18) 0%, transparent 30%),
+        radial-gradient(circle at 90% 80%, rgba(99, 102, 241, 0.2) 0%, transparent 35%),
+        linear-gradient(135deg, #0b1220, #0f172a, #111827);
     color: var(--light);
     line-height: 1.6;
     overflow-x: hidden;
@@ -31,9 +35,9 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
-        radial-gradient(circle at 10% 20%, rgba(108, 99, 255, 0.15) 0%, transparent 20%),
-        radial-gradient(circle at 90% 80%, rgba(255, 101, 132, 0.15) 0%, transparent 20%);
+    background:
+        radial-gradient(circle at 30% 60%, rgba(14, 165, 233, 0.1) 0%, transparent 35%),
+        radial-gradient(circle at 70% 40%, rgba(245, 158, 11, 0.12) 0%, transparent 30%);
     z-index: -1;
 }
 
@@ -52,7 +56,7 @@ header {
     width: 100%;
     z-index: 1000;
     backdrop-filter: blur(10px);
-    background: rgba(42, 42, 60, 0.8);
+    background: rgba(15, 23, 42, 0.85);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -191,8 +195,8 @@ nav {
 
 .tagline {
     display: inline-block;
-    background: rgba(108, 99, 255, 0.2);
-    color: var(--primary);
+    background: rgba(14, 165, 233, 0.2);
+    color: #7dd3fc;
     padding: 0.5rem 1rem;
     border-radius: 30px;
     margin-bottom: 1.5rem;
@@ -226,7 +230,7 @@ nav {
 
 /* About / Journey Section */
 section {
-    padding: 3rem 0;
+    padding: 3.5rem 0;
 }
 
 .section-title {
@@ -304,7 +308,7 @@ section {
 
 .stat-card:hover {
     transform: translateY(-10px);
-    background: rgba(108, 99, 255, 0.1);
+    background: rgba(14, 165, 233, 0.12);
 }
 
 .stat-card i {
@@ -405,8 +409,9 @@ section {
     padding: 1.8rem;
     border-radius: 20px;
     transition: var(--transition);
-    transform: translateZ(0);
+    transform: translateY(18px);
     backdrop-filter: blur(10px);
+    opacity: 0;
 }
 
 .experience-card:hover {
@@ -442,10 +447,11 @@ section {
     border-radius: 20px;
     overflow: hidden;
     transition: var(--transition);
-    transform: translateZ(0);
+    transform: translateY(18px);
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
+    opacity: 0;
 }
 
 .project-card:hover {
@@ -596,7 +602,7 @@ section {
 }
 
 .email-btn {
-    background: linear-gradient(45deg, #6C63FF, #4A44C6);
+    background: linear-gradient(45deg, #0ea5e9, #2563eb);
 }
 
 .whatsapp-btn {
@@ -608,7 +614,7 @@ section {
 }
 
 .github-btn {
-    background: linear-gradient(45deg, #bed8e2, #6e62d8,);
+    background: linear-gradient(45deg, #111827, #334155);
 }
 
 .contact-btn:hover {
@@ -622,7 +628,7 @@ section {
     gap: 0.8rem;
     margin-top: 2rem;
     padding: 0.8rem;
-    background: rgba(108, 99, 255, 0.1);
+    background: rgba(14, 165, 233, 0.12);
     border-radius: 10px;
     font-size: 0.9rem;
 }
@@ -794,7 +800,7 @@ footer {
 .ring {
     width:70px;
     height:70px;
-    border: 6px solid rgba (255, 255, 255, 0.2);
+    border: 6px solid rgba(255, 255, 255, 0.2);
     border-top: 6px solid #FF6584;
     border-radius: 50% ;
     animation: spin 1s linear infinite, glow 1.5s ease infinite;
@@ -921,4 +927,41 @@ footer {
     display: none;
     text-align: center ;
     margin-top: 10px;
+}
+
+.form-status {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: var(--gray);
+    text-align: center;
+}
+
+.status-success {
+    color: #22c55e;
+}
+
+.status-error {
+    color: #f87171;
+}
+
+.experience-card.visible,
+.project-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
 }

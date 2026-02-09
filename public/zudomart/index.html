@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZudoMart Press Release | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+            color: white;
+            padding: 60px 0 40px;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .logo-placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #0d47a1;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.4rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        
+        .date-location {
+            background-color: rgba(255, 255, 255, 0.15);
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        @media (max-width: 992px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .content {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .sidebar {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: fit-content;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        h2 {
+            color: #1a237e;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8eaf6;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 80px;
+            height: 2px;
+            background-color: #0d47a1;
+        }
+        
+        h3 {
+            color: #0d47a1;
+            margin: 25px 0 15px;
+            font-size: 1.4rem;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight-box {
+            background-color: #e8eaf6;
+            border-left: 4px solid #0d47a1;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .quote {
+            font-style: italic;
+            color: #555;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            margin: 25px 0;
+            position: relative;
+        }
+        
+        .quote:before {
+            content: '"';
+            font-size: 4rem;
+            color: #0d47a1;
+            opacity: 0.3;
+            position: absolute;
+            top: -10px;
+            left: 10px;
+        }
+        
+        .author {
+            font-weight: 600;
+            color: #1a237e;
+            margin-top: 10px;
+            text-align: right;
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 25px 0;
+            color: #777;
+            overflow: hidden;
+        }
+        
+        .image-placeholder i {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #9e9e9e;
+        }
+        
+        .image-placeholder.small {
+            height: 150px;
+        }
+        
+        .image-placeholder.large {
+            height: 250px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .stat-item {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0d47a1;
+            display: block;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 5px;
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #e8eaf6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: #0d47a1;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        
+        .tag {
+            background-color: #e8eaf6;
+            color: #1a237e;
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            background-color: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: #0d47a1;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: #1a237e;
+            transform: translateY(-5px);
+        }
+        
+        .timeline {
+            margin-top: 30px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 25px;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background-color: #0d47a1;
+            border-radius: 50%;
+        }
+        
+        .timeline-item:after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 17px;
+            width: 2px;
+            height: calc(100% + 8px);
+            background-color: #0d47a1;
+        }
+        
+        .timeline-item:last-child:after {
+            display: none;
+        }
+        
+        .timeline-date {
+            font-weight: 600;
+            color: #0d47a1;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .content, .sidebar {
+                padding: 25px;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-placeholder">
+                    <i class="fas fa-store"></i>
+                </div>
+                <div class="logo-placeholder">
+                    <i class="fas fa-rocket"></i>
+                </div>
+            </div>
+            <h1>ZudoMart Joins EquityPilot to Scale African Super-App</h1>
+            <div class="subtitle">A scam-proof platform for African entrepreneurs with AI-powered trust engine</div>
+            <div class="date-location">
+                <i class="fas fa-map-marker-alt"></i> Lagos, Nigeria & Dubai, UAE — January 27, 2026
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <main>
+            <div class="content">
+                <section class="section">
+                    <h2>Press Release Overview</h2>
+                    
+                    <p>Africa's informal peer-to-peer economy supports millions of microentrepreneurs but remains fragmented and vulnerable to fraud. An estimated <strong>65% of traders report losses to scams</strong> on informal platforms; Nigeria alone represents a sizeable portion of the continent's ecommerce activity. Investors and ecosystem actors are prioritizing digital trust, local payments, and creator monetization tools that adapt to African realities.</p>
+                </section>
+                
+                <section class="section">
+                    <h2>What ZudoMart Delivers</h2>
+                    
+                    <p>ZudoMart is an African-first superapp built to empower entrepreneurs with an integrated marketplace for goods, services and micro-gigs, live commerce features, and a multi-layer trust engine. Core product highlights include:</p>
+                    
+                    <ul>
+                        <li><strong>Six-tier verification system</strong> with AI fraud detection</li>
+                        <li><strong>Escrow payments</strong> for secure transactions</li>
+                        <li><strong>Hyperlocal discovery</strong> (campus and neighborhood filters)</li>
+                        <li><strong>ZudoReels short video content</strong> for product showcasing</li>
+                        <li><strong>Live stream monetization</strong> with virtual gifts</li>
+                    </ul>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">8.1M</span>
+                            <span class="stat-label">Active ecommerce traders today</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">12M+</span>
+                            <span class="stat-label">Target users by 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <p>ZudoMart targets 8.1 million active ecommerce traders today, with plans to expand to 12M+ users across the continent by 2025.</p>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h2>Market Opportunity</h2>                    
+                    <h3>Why Now?</h3>
+                    <p>Mobile adoption, local mobile money ecosystems, and rising creator economies have created a window to migrate informal transactions onto a secure, purpose-built platform. Growing advertiser interest in GenZ audiences and demand for affordable microloan and payout integrations further accelerate timing for a trust-first marketplace tailored to African use cases.</p>
+                    
+                    <h3>Competitive Landscape</h3>
+                    <p>ZudoMart addresses gaps across three categories:</p>
+                    <ul>
+                        <li><strong>General social platforms</strong> (where scams proliferate in DMs)</li>
+                        <li><strong>Classifieds</strong> (limited dispute resolution)</li>
+                        <li><strong>Global freelance marketplaces</strong> (high fees and poor fit for micro-gigs)</li>
+                    </ul>
+                    
+                    <p>ZudoMart's differentiators are escrow for small transactions, localized payment options, campus-level discovery, and built-in creator monetization tools.</p>
+                </section>
+                
+                <section class="section">
+                    <h2>Execution Plan</h2>
+                    
+                    <h3>Program Plan (first 30-60 days)</h3>
+                    <p>Through EquityPilot, ZudoMart will refine product-market fit and execute priority milestones:</p>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">Days 1-30</div>
+                            <p>Hardening escrow and AI detection workflows, launching creator ad monetization pilots</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Days 30-60</div>
+                            <p>Initiating campus ambassador activations in Lagos with FasterCapital execution support</p>
+                        </div>
+                    </div>
+                    
+                    <p>FasterCapital will provide execution support, mentorship, and introductions to payment providers and brands to validate integrations and early monetization flows. This phase focuses on measurable KPIs rather than fundraising guarantees.</p>
+                    
+                    <div class="quote">
+                        "We're excited to support ZudoMart through EquityPilot. Our team will focus on execution milestones and connecting the startup with the right ecosystem stakeholders."
+                        <div class="author">- Hesham Zreik, Founder and CEO of FasterCapital</div>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h2>Founder Background</h2>                    
+                    <p>Founded by <strong>Oluwayemi Oyinlola</strong> and co-founded by <strong>Idebi Olubusayo</strong>, ZudoMart blends product, design and engineering experience anchored in Nigerian market realities. The founding team combines technical expertise with grassroots outreach strategies (campus activations and ambassador programs) to accelerate organic adoption among micro-entrepreneurs.</p>
+                </section>
+                
+                <section class="section">
+                    <h2>Next 90 Days</h2>
+                    <p>Key milestones include:</p>
+                    <ul>
+                        <li>Launching a public MVP with escrow and verification</li>
+                        <li>Onboarding first creator cohorts for ad revenue pilots</li>
+                        <li>Integrating two local payment providers</li>
+                        <li>Measuring user retention and dispute resolution times</li>
+                    </ul>
+                </section>
+            </div>
+            
+            <aside class="sidebar">
+                <section class="section">
+                    <h2>Key Facts</h2>
+                    
+                    <div class="highlight-box">
+                        <p><strong>Partnership:</strong> ZudoMart joins EquityPilot program</p>
+                        <p><strong>Goal:</strong> Scale scam-proof super-app for African entrepreneurs</p>
+                        <p><strong>Trust Engine:</strong> Market-first for African gig economy</p>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h2>About ZudoMart</h2>
+                    <p>ZudoMart is a superapp designed to empower African entrepreneurs to trade safely, monetize skills, and build trusted communities. Combining marketplace listings, services, micro-gigs, live commerce, and AI-driven trust systems, ZudoMart aims to reduce scams and expand financial inclusion across the continent.</p>
+                </section>
+                
+                <section class="section">
+                    <h2>About FasterCapital</h2>
+                    <p>FasterCapital is a global venture builder and online incubator dedicated to co-funding and co-founding innovative startups. Established in 2014, we are now #1 venture builder in terms of number of startups that we have helped, money invested and money raised. It supports startups worldwide through various programs, including funding assistance, business development, and technical support.</p>
+                    
+                    <p>The EquityPilot program is designed to help early-stage startups build scalable solutions with mentorship, strategic guidance, and network support.</p>
+                </section>
+                
+                <section class="section">
+                    <h2>Media Contact</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <strong>Lydia Zeng</strong><br>
+                                Media Relations
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <strong>Email:</strong><br>
+                                lydia.zeng@fastercapital.com
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <strong>Phone:</strong><br>
+                                +1 (512) 400-0256
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div>
+                                <strong>Website:</strong><br>
+                                https://www.fastercapital.com
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="tags">
+                    <div class="tag">African Tech</div>
+                    <div class="tag">E-commerce</div>
+                    <div class="tag">Fintech</div>
+                    <div class="tag">Super-app</div>
+                    <div class="tag">Trust Engine</div>
+                    <div class="tag">Startup</div>
+                    <div class="tag">Entrepreneurship</div>
+                </div>
+            </aside>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>ZudoMart Press Release</p>
+            <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">All company names and logos are property of their respective owners</p>
+        </div>
+    </footer>
+    
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Add subtle animation to stats when they come into view
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transform = 'scale(1.05)';
+                    entry.target.style.transition = 'transform 0.5s ease';
+                    
+                    setTimeout(() => {
+                        entry.target.style.transform = 'scale(1)';
+                    }, 300);
+                }
+            });
+        }, observerOptions);
+        
+        // Observe stat items
+        const statItems = document.querySelectorAll('.stat-item');
+        statItems.forEach(item => observer.observe(item));
+    </script>
+</body>
+</html>

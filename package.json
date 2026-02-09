@@ -3,20 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "node index.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
-    "next": "^16.0.7",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
+    "express": "^4.22.1",
     "resend": "^6.5.2"
-  },
-  "devDependencies": {
-    "eslint": "^8.48.0",
-    "eslint-config-next": "13.5.2"
   }
 }

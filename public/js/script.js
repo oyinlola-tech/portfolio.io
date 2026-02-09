@@ -122,6 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Loading feature
 window.addEventListener('load', ()=>{
     const loader = document.getElementById('loader');
+    if (!loader) return;
 
     setTimeout(()=>{
         loader.style.opacity = '0';
@@ -134,8 +135,10 @@ window.addEventListener('load', ()=>{
 
 // Contact form submission
 
- const form = document.getElementById("contactForm");
+const form = document.getElementById("contactForm");
+const statusEl = document.getElementById("formStatus");
 
+if (form) {
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
@@ -148,6 +151,11 @@ form.addEventListener("submit", async (e) => {
 
   const btn = form.querySelector("button");
   const spinner = document.getElementById("customSpinner");
+
+  if (statusEl) {
+    statusEl.textContent = "";
+    statusEl.className = "form-status";
+  }
 
   btn.disabled = true;
   spinner.style.display = "block";
@@ -162,15 +170,29 @@ form.addEventListener("submit", async (e) => {
     const result = await res.json();
 
     if (result.success) {
-      alert("Message sent successfully.");
+      if (statusEl) {
+        statusEl.textContent = "Message sent successfully.";
+        statusEl.className = "form-status status-success";
+      }
       form.reset();
     } else {
-      alert(result.error || "Failed to send message.");
+      if (statusEl) {
+        statusEl.textContent = result.error || "Failed to send message.";
+        statusEl.className = "form-status status-error";
+      } else {
+        alert(result.error || "Failed to send message.");
+      }
     }
   } catch (err) {
-    alert("There was an error. Please try again.");
+    if (statusEl) {
+      statusEl.textContent = "There was an error. Please try again.";
+      statusEl.className = "form-status status-error";
+    } else {
+      alert("There was an error. Please try again.");
+    }
   }
 
   btn.disabled = false;
   spinner.style.display = "none";
 });
+}
