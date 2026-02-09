@@ -137,15 +137,27 @@ app.post("/api/sendmail", async (req, res) => {
     `;
 
     const resend = new Resend(process.env.RESEND_KEY);
+    const fromAddress =
+      process.env.MAIL_FROM || "Contact Form <onboarding@resend.dev>";
 
-    const sent = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
+    const { data, error } = await resend.emails.send({
+      from: fromAddress,
       to: process.env.MAIL_TO,
+      replyTo: email,
       subject: `${subject} | Portfolio Contact`,
       html,
     });
 
-    return res.status(200).json({ success: true, id: sent.id });
+    if (error) {
+      console.error("Resend Error:", error);
+      return res.status(500).json({
+        error:
+          error.message ||
+          "Email could not be sent. Please try again later.",
+      });
+    }
+
+    return res.status(200).json({ success: true, id: data?.id });
   } catch (error) {
     console.error("Email Error:", error);
     return res
