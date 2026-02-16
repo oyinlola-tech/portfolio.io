@@ -1,4 +1,4 @@
-import { mkdir, copyFile } from 'node:fs/promises';
+import { mkdir, copyFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -16,7 +16,12 @@ await mkdir(path.join(root, 'public'), { recursive: true });
 for (const [srcRel, outRel] of pairs) {
   const src = path.join(root, srcRel);
   const out = path.join(root, outRel);
-  await copyFile(src, out);
+  try {
+    await access(src);
+    await copyFile(src, out);
+  } catch (error) {
+    console.warn(`Skipping missing llms source: ${srcRel}`);
+  }
 }
 
 console.log('Synced llms files to public root.');

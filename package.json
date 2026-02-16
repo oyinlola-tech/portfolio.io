@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "predev": "node scripts/sync-llms.mjs",
-    "dev": "vite",
-    "prebuild": "node scripts/sync-llms.mjs",
-    "build": "vite build",
-    "prepreview": "node scripts/sync-llms.mjs",
-    "preview": "vite preview"
+    "dev": "node scripts/sync-llms.mjs && vite",
+    "build": "node scripts/sync-llms.mjs && vite build",
+    "preview": "node scripts/sync-llms.mjs && vite preview"
   },
   "dependencies": {
     "i": "^0.3.7",
