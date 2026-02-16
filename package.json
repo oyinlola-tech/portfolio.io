@@ -3,12 +3,30 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node index.js",
-    "start": "node index.js"
+    "predev": "node scripts/sync-llms.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/sync-llms.mjs",
+    "build": "vite build",
+    "prepreview": "node scripts/sync-llms.mjs",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "dotenv": "^17.2.3",
-    "express": "^4.22.1",
+    "i": "^0.3.7",
+    "lucide-react": "^0.544.0",
+    "motion": "^12.23.24",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router": "^7.9.2",
     "resend": "^6.5.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.12",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.1",
+    "tailwindcss": "^4.1.12",
+    "tw-animate-css": "^1.3.7",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5"
   }
 }

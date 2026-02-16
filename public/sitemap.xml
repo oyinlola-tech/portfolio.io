@@ -1,128 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.oyinlola.site/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://oyinlola.site/</loc>
   </url>
   <url>
-    <loc>https://www.oyinlola.site/blog/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://oyinlola.site/about</loc>
   </url>
   <url>
-    <loc>https://www.oyinlola.site/blog/about/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://oyinlola.site/projects</loc>
   </url>
   <url>
-    <loc>https://www.oyinlola.site/blog/contact/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://oyinlola.site/zudomart</loc>
   </url>
   <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic1-active-recall.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://oyinlola.site/blog</loc>
   </url>
   <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic2-study-schedule.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://oyinlola.site/experience</loc>
   </url>
   <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic3-procrastination.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://oyinlola.site/cv</loc>
   </url>
   <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic4-growth-mindset.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://oyinlola.site/contact</loc>
   </url>
   <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic5-note-talking.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://oyinlola.site/llms.txt</loc>
   </url>
   <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic6-help-homework.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic7-home-learning.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic8-standardized-test.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic9-love-reading.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic10-chores.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic11-differentiation.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic12-assessment.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic13-pbl.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic14-class-culture.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic15-teacher-burnout.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic16-ai.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic17-sel.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic18-microlearning.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic19-Financial.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/blog/articles/topic20-global.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.oyinlola.site/zudomart/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://oyinlola.site/llms-full.txt</loc>
   </url>
 </urlset>

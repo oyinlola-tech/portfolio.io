@@ -1,0 +1,29 @@
+﻿# ZudoMart & My Services
+
+## Overview
+I provide digital solutions and consulting for entrepreneurs, creators, and small businesses, helping them leverage technology to grow, monetize, and operate safely online. One of my key projects is **ZudoMart**, an African-first superapp that empowers users to trade safely, showcase their skills, and connect with trusted communities.
+
+## ZudoMart Highlights
+- **Marketplace & Micro-gigs**: Buy, sell, and offer services securely.
+- **Escrow Payments**: Ensures safe transactions between users.
+- **AI Fraud Detection**: Six-tier verification to reduce scams.
+- **Hyperlocal Discovery**: Find products, services, and creators nearby.
+- **Live Stream Commerce**: Sell products live with virtual gifts.
+- **ZudoReels**: Short-form product videos to showcase offerings.
+- **Localized Payment Options**: Supports regional payment methods.
+- **Creator Monetization Tools**: Built-in features for earning online.
+
+## Audience
+African entrepreneurs, creators, and micro-sellers seeking safe, local, and scalable commerce solutions.
+
+## My Services
+- Software Engineer 
+- Cybersecurity consulting and secure web design
+- AI-driven project development
+- Virtual assistance and productivity optimization
+- Technical guidance for startups and marketplaces
+
+## Links
+- Portfolio: https://www.oyinlola.site/
+- ZudoMart Pitch Deck: https://docs.google.com/presentation/d/10qkSdBBf6FSYqc_3om_-oAHa8KBHoiB-GlVYj6z4oKY/edit?usp=drivesdk
+- ZudoMart Press Release: https://www.oyinlola.site/zudomart
