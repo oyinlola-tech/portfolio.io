@@ -1,16 +1,16 @@
 ﻿# ZudoMart & My Services (Full)
 
 ## Executive Summary
-I build secure, user-friendly digital products for entrepreneurs, creators, and small businesses. My work spans front-end development, cybersecurity-informed design, AI-enabled product concepts, and operational support. A core focus is **ZudoMart**, an African-first superapp that enables safe commerce, service delivery, and creator monetization through trust, escrow, and live commerce features.
+I build secure, user-friendly digital products for entrepreneurs, creators, and small businesses. My work spans front-end development, cybersecurity-informed design, AI-enabled product concepts, and operational support. A core focus is **ZudoMart**, an African-first startup currently in MVP refinement for trust-first commerce, service delivery, and creator monetization.
 
 ## About ZudoMart
-ZudoMart is a multi-purpose platform for African entrepreneurs that brings together:
+ZudoMart is an MVP-stage product for African entrepreneurs that brings together:
 - Marketplace listings for goods and services
 - Micro-gigs and freelance services
 - Live commerce and creator monetization
 - Trust, verification, and escrow protection
 
-The platform is built around a multi-layer trust engine to reduce fraud and expand safe digital trade.
+The platform is being refined around a multi-layer trust engine to reduce fraud and support safer digital trade.
 
 ## ZudoMart Capabilities
 - **Marketplace & Micro-gigs**: Buy, sell, and offer services securely.

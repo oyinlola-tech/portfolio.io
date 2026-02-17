@@ -1,9 +1,10 @@
 ﻿# ZudoMart & My Services
 
 ## Overview
-I provide digital solutions and consulting for entrepreneurs, creators, and small businesses, helping them leverage technology to grow, monetize, and operate safely online. One of my key projects is **ZudoMart**, an African-first superapp that empowers users to trade safely, showcase their skills, and connect with trusted communities.
+I provide digital solutions and consulting for entrepreneurs, creators, and small businesses, helping them leverage technology to grow, monetize, and operate safely online. One of my key projects is **ZudoMart**, an African-first startup currently in MVP refinement to support safer peer-to-peer commerce and creator-led services.
 
 ## ZudoMart Highlights
+- **Current Stage**: MVP refinement and product validation.
 - **Marketplace & Micro-gigs**: Buy, sell, and offer services securely.
 - **Escrow Payments**: Ensures safe transactions between users.
 - **AI Fraud Detection**: Six-tier verification to reduce scams.

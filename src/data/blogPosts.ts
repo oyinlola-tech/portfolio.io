@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
     id: '1',
     slug: 'scaling-ecommerce-10000-concurrent-users',
     title: 'Scaling E-commerce to Handle 10,000+ Concurrent Users: A Technical Deep Dive',
-    excerpt: 'How I architected and scaled ZudoMart to handle Black Friday traffic spikes, reducing response times from 3s to 200ms while maintaining 99.9% uptime.',
+    excerpt: 'How I architected and scaled a marketplace platform to handle Black Friday traffic spikes, reducing response times from 3s to 200ms while maintaining 99.9% uptime.',
     date: '2024-12-08',
     readTime: '12 min read',
     category: 'Architecture & Scale',
@@ -35,7 +35,7 @@ export const blogPosts: BlogPost[] = [
 
 ## The Problem: Black Friday Was Coming
 
-When ZudoMart prepared for our first major Black Friday sale, our load tests revealed a critical problem: the system could barely handle 500 concurrent users before response times degraded from 800ms to over 5 seconds. We needed to scale 20x in just 6 weeks.
+When we prepared a marketplace platform for a major Black Friday sale, load tests revealed a critical problem: the system could barely handle 500 concurrent users before response times degraded from 800ms to over 5 seconds. We needed to scale 20x in just 6 weeks.
 
 ## The Architecture Challenge
 
@@ -1034,7 +1034,7 @@ Every production system will fail eventually. The question is: Are you prepared?
 
 ---
 
-*This post-mortem was shared with permission from ZudoMart leadership as part of our commitment to transparent engineering culture and continuous learning.*`
+*This post-mortem was shared with permission from startup leadership as part of our commitment to transparent engineering culture and continuous learning.*`
   },
   {
     id: '5',
@@ -1083,7 +1083,7 @@ As senior engineer, I introduced ADRs - lightweight documents that capture:
 **Deciders:** Oluwayemi Michael (Lead Engineer), Product Team
 **Context:**
 
-We need to integrate payment processing for ZudoMart's e-commerce platform. Key requirements:
+We need to integrate payment processing for an e-commerce platform. Key requirements:
 - Support for Nigerian payment methods (cards, bank transfer, USSD)
 - PCI compliance handled by provider
 - Webhook support for async notifications
@@ -1140,7 +1140,7 @@ We will use Paystack as our primary payment gateway with Flutterwave as backup.
 
 ### 1. ADRs Live in the Repository
 
-**Location:** `/docs/architecture/decisions/`
+**Location:** '/docs/architecture/decisions/'
 
 **Benefits:**
 - Version controlled with code
@@ -1191,7 +1191,7 @@ I created scripts to generate architecture diagrams from ADRs:
 **Output:** Mermaid diagrams showing decision flow
 **Automation:** Regenerated on every commit
 
-## Real-World Examples from ZudoMart
+## Real-World Examples from a Marketplace Product
 
 ### ADR-007: Caching Strategy for Product Catalog
 
@@ -1370,7 +1370,7 @@ The best engineers don't just write code - they write context. ADRs are that con
 
 ---
 
-*Want to get started? Check out our ADR template: github.com/zudomart/adr-template*`
+*Want to get started? Check out our ADR template repository example.*`
   }
 ];
 

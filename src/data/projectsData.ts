@@ -25,53 +25,48 @@ export const projects: Project[] = [
     title: 'ZudoMart - Multi-Vendor Marketplace Platform',
     slug: 'zudomart-marketplace',
     category: 'E-commerce & Marketplace',
-    description: 'Founded and built a comprehensive multi-vendor e-commerce platform with end-to-end marketplace functionality.',
-    detailedDescription: 'ZudoMart is a full-featured marketplace platform serving buyers, sellers, and service providers. As founder and lead engineer, I architected and developed the entire platform from ground up, handling 10,000+ concurrent users with 99.9% uptime.',
+    description: 'Founder-led startup currently in MVP refinement for safe peer-to-peer commerce.',
+    detailedDescription: 'ZudoMart is an early-stage, Africa-first startup product focused on building a trust-first marketplace for goods, services, and micro-gigs. The current phase is MVP refinement, user validation, and launch readiness.',
     technologies: ['Node.js', 'Express.js', 'React', 'PostgreSQL', 'Redis', 'Docker', 'Nginx'],
     highlights: [
-      'Scaled to handle 10,000+ concurrent users during peak sales',
-      'Implemented multi-tenant architecture supporting 500+ active sellers',
-      'Built real-time inventory synchronization across warehouses',
-      'Integrated multiple payment gateways (Paystack, Flutterwave)',
-      'Developed custom escrow system for secure transactions'
+      'Designed core marketplace architecture for MVP rollout',
+      'Built trust and verification workflow foundations',
+      'Prototyped escrow-first transaction flows',
+      'Defined local payment and payout integration direction',
+      'Structured roadmap milestones with validation checkpoints'
     ],
     metrics: [
-      { label: 'Active Users', value: '25,000+' },
-      { label: 'Concurrent Users', value: '10,000+' },
-      { label: 'Response Time', value: '200ms avg' },
-      { label: 'Uptime', value: '99.9%' },
-      { label: 'Revenue Processed', value: '$2M+' }
+      { label: 'Stage', value: 'MVP Refinement' },
+      { label: 'Program', value: 'EquityPilot' },
+      { label: 'Primary Focus', value: 'Trust and Safety' },
+      { label: 'Go-to-Market', value: 'Early Validation' },
+      { label: 'Region', value: 'Africa-first' }
     ],
     features: [
-      'Multi-vendor product listings with advanced search',
-      'Real-time shopping cart with inventory validation',
-      'Integrated payment processing with multiple gateways',
-      'Seller dashboard with inventory and order management',
-      'Buyer dashboard with order tracking',
-      'Escrow system with dispute resolution',
-      'Real-time chat between buyers and sellers',
-      'Admin panel for platform moderation',
-      'Automated email and push notifications',
-      'Live commerce module for streaming sales'
+      'Marketplace listing and discovery foundation',
+      'Escrow-centered transaction logic',
+      'Three-tier verification and trust model',
+      'Hyper-local commerce discovery',
+      'Creator-focused short video and live commerce direction',
+      'Dispute-aware safety flow planning'
     ],
     challenges: [
-      'Scaling to handle Black Friday traffic (500 → 10,000 users)',
-      'Ensuring payment reliability (99.87% success rate)',
-      'Managing inventory across multiple sellers',
-      'Handling concurrent transactions without race conditions',
-      'Maintaining sub-second response times under load'
+      'Converting informal trade behavior into structured product flows',
+      'Balancing safety checks with fast onboarding and checkout',
+      'Designing for low-ticket transactions with escrow',
+      'Prioritizing roadmap scope for MVP delivery',
+      'Aligning technical delivery with local market realities'
     ],
     solutions: [
-      'Implemented Redis caching layer (73% database load reduction)',
-      'Database read replicas for scaling queries',
-      'Connection pooling and query optimization',
-      'Asynchronous job processing with Bull Queue',
-      'Horizontal scaling with Nginx load balancing',
-      'Comprehensive monitoring with Prometheus + Grafana'
+      'Phased product execution around validation milestones',
+      'Defined trust-engine layers before broad expansion',
+      'Mapped escrow and dispute lifecycle states',
+      'Aligned early integrations with payment and creator use-cases',
+      'Tracked progress with measurable MVP KPIs'
     ],
-    impact: 'Successfully launched and scaled ZudoMart to process over $2M in transactions, serving 25,000+ users with exceptional reliability. Reduced infrastructure costs by 35% through optimization while handling 20x traffic growth.',
+    impact: 'ZudoMart remains in development and MVP refinement, with current work focused on trust-first execution, user feedback loops, and launch readiness through the FasterCapital EquityPilot support structure.',
     date: '2023-Present',
-    status: 'Ongoing'
+    status: 'In Progress'
   },
   {
     id: '2',
@@ -504,7 +499,7 @@ export const projects: Project[] = [
     ],
     impact: 'Caught 127 bugs before reaching production. Reduced code review time by 40%. Improved overall code quality score from 6.3 to 8.7.',
     date: '2024',
-    status: 'Ongoing'
+    status: 'In Progress'
   }
 ];
 
@@ -527,3 +522,4 @@ export function getFeaturedProjects(count: number = 6): Project[] {
 export function getAllCategories(): string[] {
   return Array.from(new Set(projects.map(p => p.category)));
 }
+

@@ -4,19 +4,58 @@
     <loc>https://oyinlola.site/</loc>
   </url>
   <url>
-    <loc>https://oyinlola.site/about</loc>
-  </url>
-  <url>
     <loc>https://oyinlola.site/projects</loc>
   </url>
   <url>
-    <loc>https://oyinlola.site/zudomart</loc>
+    <loc>https://oyinlola.site/projects/zudomart-marketplace</loc>
+  </url>
+  <url>
+    <loc>https://oyinlola.site/projects/telente-logistics</loc>
+  </url>
+  <url>
+    <loc>https://oyinlola.site/projects/ecommerce-platform</loc>
+  </url>
+  <url>
+    <loc>https://oyinlola.site/projects/payment-gateway-layer</loc>
+  </url>
+  <url>
+    <loc>https://oyinlola.site/projects/seller-dashboard-pos</loc>
+  </url>
+  <url>
+    <loc>https://oyinlola.site/projects/escrow-trust-workflow</loc>
+  </url>
+  <url>
+    <loc>https://oyinlola.site/projects/multi-role-account-system</loc>
+  </url>
+  <url>
+    <loc>https://oyinlola.site/projects/real-time-chat-system</loc>
+  </url>
+  <url>
+    <loc>https://oyinlola.site/projects/api-security-hardening</loc>
+  </url>
+  <url>
+    <loc>https://oyinlola.site/projects/automated-code-review</loc>
   </url>
   <url>
     <loc>https://oyinlola.site/blog</loc>
   </url>
   <url>
-    <loc>https://oyinlola.site/experience</loc>
+    <loc>https://oyinlola.site/blog/scaling-ecommerce-10000-concurrent-users</loc>
+  </url>
+  <url>
+    <loc>https://oyinlola.site/blog/testing-culture-zero-to-hero</loc>
+  </url>
+  <url>
+    <loc>https://oyinlola.site/blog/ci-cd-pipeline-from-scratch</loc>
+  </url>
+  <url>
+    <loc>https://oyinlola.site/blog/incident-response-payment-gateway-outage</loc>
+  </url>
+  <url>
+    <loc>https://oyinlola.site/blog/documentation-architecture-decisions</loc>
+  </url>
+  <url>
+    <loc>https://oyinlola.site/zudomart</loc>
   </url>
   <url>
     <loc>https://oyinlola.site/cv</loc>
