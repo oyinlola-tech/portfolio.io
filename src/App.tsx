@@ -1,11 +1,11 @@
 import { Suspense, lazy, useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
+import { Toaster } from './components/Toaster';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
+import { HomePage } from './pages/HomePage';
 
-const Toaster = lazy(() => import('./components/Toaster').then((m) => ({ default: m.Toaster })));
-const HomePage = lazy(() => import('./pages/HomePage').then((m) => ({ default: m.HomePage })));
 const ProjectsPage = lazy(() => import('./pages/ProjectsPage').then((m) => ({ default: m.ProjectsPage })));
 const ProjectDetailPage = lazy(() =>
   import('./pages/ProjectDetailPage').then((m) => ({ default: m.ProjectDetailPage }))
@@ -127,14 +127,10 @@ function AppLayout() {
 
   return (
     <div className="bg-[#282c33] min-h-screen relative overflow-x-hidden">
-      <Suspense fallback={null}>
-        <Toaster position="top-right" />
-      </Suspense>
+      <Toaster position="top-right" />
       <ScrollToTop />
       <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
-      <Suspense
-        fallback={<main className="px-4 md:px-8 lg:px-32 py-16 text-[#abb2bf] font-['Fira_Code']">Loading...</main>}
-      >
+      <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
