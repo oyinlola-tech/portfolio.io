@@ -22,7 +22,7 @@ export function Projects() {
           {projects.map((project) => (
             <article key={project.id} className="border border-[#abb2bf] flex flex-col">
               <div className="border-b border-[#abb2bf] p-2">
-                <div className="font-['Fira_Code'] text-[#abb2bf] text-sm flex flex-wrap gap-2">
+                <div className="font-['Fira_Code'] text-[#d1d7e0] text-sm flex flex-wrap gap-2">
                   {project.technologies.slice(0, 4).map((tech) => (
                     <span key={tech}>{tech}</span>
                   ))}
@@ -31,9 +31,9 @@ export function Projects() {
 
               <div className="p-4 flex-1 flex flex-col">
                 <h3 className="font-['Fira_Code'] font-medium text-white text-xl mb-3">{project.title}</h3>
-                <p className="font-['Fira_Code'] text-[#abb2bf] text-sm mb-4 flex-1">{project.description}</p>
+                <p className="font-['Fira_Code'] text-[#d1d7e0] text-sm mb-4 flex-1">{project.description}</p>
                 <div className="flex items-center justify-between gap-3">
-                  <span className="font-['Fira_Code'] text-xs text-[#abb2bf]">{project.status}</span>
+                  <span className="font-['Fira_Code'] text-xs text-[#d1d7e0]">{project.status}</span>
                   <Link
                     to={`/projects/${project.slug}`}
                     className="font-['Fira_Code'] font-medium text-white border border-[#c778dd] px-4 py-2 hover:bg-[#c778dd] hover:bg-opacity-10 transition-all text-sm"

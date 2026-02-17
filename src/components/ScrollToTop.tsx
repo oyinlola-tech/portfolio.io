@@ -29,7 +29,7 @@ export function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 bg-[#8f3db2] text-white p-3 rounded-sm hover:bg-[#7c349b] transition-all shadow-lg"
+          className="fixed bottom-8 right-8 z-50 bg-[#c778dd] text-white p-3 rounded-sm hover:bg-opacity-90 transition-all shadow-lg"
           aria-label="Scroll to top"
         >
           <span className="font-['Fira_Code'] text-lg leading-none" aria-hidden="true">

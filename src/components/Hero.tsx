@@ -1,8 +1,26 @@
+import { useEffect } from 'react';
 import imgImageRemovebgPreview from "../assets/f4d7792241ade353515843fc44bf4f33ac8d48cd.webp";
 import svgPaths from "../imports/svg-ldtp72mrko";
 import { Link } from 'react-router-dom';
 
 export function Hero() {
+  useEffect(() => {
+    const existing = document.querySelector(`link[rel="preload"][href="${imgImageRemovebgPreview}"]`);
+    if (existing) {
+      return;
+    }
+
+    const preload = document.createElement('link');
+    preload.rel = 'preload';
+    preload.as = 'image';
+    preload.href = imgImageRemovebgPreview;
+    document.head.appendChild(preload);
+
+    return () => {
+      preload.remove();
+    };
+  }, []);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center px-4 md:px-8 lg:px-32 py-16 md:py-0">
       {/* Decorative elements */}
@@ -74,6 +92,8 @@ export function Hero() {
             <img
               src={imgImageRemovebgPreview}
               alt="Oluwayemi Oyinlola"
+              width={499}
+              height={499}
               loading="eager"
               fetchPriority="high"
               decoding="async"
