@@ -54,6 +54,8 @@ export function About() {
               <img
                 src={imgAboutImage}
                 alt="About Oluwayemi Oyinlola"
+                loading="lazy"
+                decoding="async"
                 className="w-full max-w-sm h-auto border border-[#abb2bf]"
               />
 

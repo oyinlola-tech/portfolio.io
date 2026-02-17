@@ -1,15 +1,23 @@
+import { Suspense, lazy } from 'react';
 import { Hero } from '../components/Hero';
-import { About } from '../components/About';
-import { Skills } from '../components/Skills';
-import { Projects } from '../components/Projects';
+
+const About = lazy(() => import('../components/About').then((m) => ({ default: m.About })));
+const Skills = lazy(() => import('../components/Skills').then((m) => ({ default: m.Skills })));
+const Projects = lazy(() => import('../components/Projects').then((m) => ({ default: m.Projects })));
 
 export function HomePage() {
   return (
     <main>
       <Hero />
-      <About />
-      <Skills />
-      <Projects />
+      <Suspense fallback={null}>
+        <About />
+      </Suspense>
+      <Suspense fallback={null}>
+        <Skills />
+      </Suspense>
+      <Suspense fallback={null}>
+        <Projects />
+      </Suspense>
     </main>
   );
 }

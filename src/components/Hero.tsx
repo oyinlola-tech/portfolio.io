@@ -74,6 +74,9 @@ export function Hero() {
             <img
               src={imgImageRemovebgPreview}
               alt="Oluwayemi Oyinlola"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               className="w-full h-auto relative z-10"
             />
             
