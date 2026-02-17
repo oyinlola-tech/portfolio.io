@@ -40,9 +40,27 @@
       ]
     }
   ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.oyinlola.site"
+        }
+      ],
+      "destination": "https://oyinlola.site/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
-      "source": "/((?!api/|assets/|favicon.ico|robots.txt|sitemap.xml|site.webmanifest|llms.txt|llms-full.txt).*)",
+      "source": "/((?!api/|assets/|favicon.ico|favicon.svg|favicon-32x32.png|favicon-16x16.png|apple-touch-icon.png|icon-192.png|icon-512.png|robots.txt|sitemap.xml|site.webmanifest|llms.txt|llms-full.txt|googlec85b9290a26866af.html).*)",
       "destination": "/index.html"
     }
   ]

@@ -14,6 +14,32 @@ import { ZudomartPage } from './pages/ZudomartPage';
 import { ContactPage } from './pages/ContactPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 
+const CANONICAL_ORIGIN = 'https://oyinlola.site';
+
+function normalizePathname(pathname: string): string {
+  if (!pathname) {
+    return '/';
+  }
+
+  const normalized = pathname.replace(/\/+$/, '');
+  return normalized || '/';
+}
+
+function ensureMetaTag(selector: string, attrs: Record<string, string>): HTMLMetaElement {
+  const existing = document.querySelector(selector);
+  const tag = existing instanceof HTMLMetaElement ? existing : document.createElement('meta');
+
+  for (const [key, value] of Object.entries(attrs)) {
+    tag.setAttribute(key, value);
+  }
+
+  if (!existing) {
+    document.head.appendChild(tag);
+  }
+
+  return tag;
+}
+
 function AppLayout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
@@ -51,19 +77,49 @@ function AppLayout() {
       },
     };
 
+    const normalizedPathname = normalizePathname(location.pathname);
     const key =
-      location.pathname.startsWith('/projects/')
+      normalizedPathname.startsWith('/projects/')
         ? '/projects'
-        : location.pathname.startsWith('/blog/')
+        : normalizedPathname.startsWith('/blog/')
           ? '/blog'
-          : location.pathname;
+          : normalizedPathname;
     const meta = pages[key] || pages['/'];
     document.title = meta.title;
 
-    const descriptionTag = document.querySelector('meta[name=\"description\"]');
-    if (descriptionTag) {
-      descriptionTag.setAttribute('content', meta.description);
+    const canonicalUrl = `${CANONICAL_ORIGIN}${normalizedPathname === '/' ? '/' : normalizedPathname}`;
+
+    const descriptionTag = ensureMetaTag('meta[name="description"]', { name: 'description' });
+    descriptionTag.setAttribute('content', meta.description);
+
+    const canonicalTag = document.querySelector('link[rel="canonical"]') ?? document.createElement('link');
+    canonicalTag.setAttribute('rel', 'canonical');
+    canonicalTag.setAttribute('href', canonicalUrl);
+    if (!canonicalTag.parentElement) {
+      document.head.appendChild(canonicalTag);
     }
+
+    const ogUrlTag = ensureMetaTag('meta[property="og:url"]', { property: 'og:url' });
+    ogUrlTag.setAttribute('content', canonicalUrl);
+
+    const twitterUrlTag = ensureMetaTag('meta[name="twitter:url"]', { name: 'twitter:url' });
+    twitterUrlTag.setAttribute('content', canonicalUrl);
+
+    const isKnownRoute =
+      normalizedPathname === '/' ||
+      normalizedPathname === '/projects' ||
+      normalizedPathname.startsWith('/projects/') ||
+      normalizedPathname === '/blog' ||
+      normalizedPathname.startsWith('/blog/') ||
+      normalizedPathname === '/zudomart' ||
+      normalizedPathname === '/cv' ||
+      normalizedPathname === '/contact';
+
+    const robotsTag = ensureMetaTag('meta[name="robots"]', { name: 'robots' });
+    robotsTag.setAttribute(
+      'content',
+      isKnownRoute ? 'index, follow, max-image-preview:large' : 'noindex, nofollow'
+    );
   }, [location.pathname]);
 
   return (
