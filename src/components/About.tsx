@@ -1,4 +1,4 @@
-import imgAboutImage from "figma:asset/54460c6b07a60652048526012507cff338176e45.png";
+import imgAboutImage from "../assets/54460c6b07a60652048526012507cff338176e45.webp";
 import { Link } from 'react-router-dom';
 
 export function About() {

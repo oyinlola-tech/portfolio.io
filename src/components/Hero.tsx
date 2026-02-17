@@ -1,4 +1,4 @@
-import imgImageRemovebgPreview from "figma:asset/f4d7792241ade353515843fc44bf4f33ac8d48cd.png";
+import imgImageRemovebgPreview from "../assets/f4d7792241ade353515843fc44bf4f33ac8d48cd.webp";
 import svgPaths from "../imports/svg-ldtp72mrko";
 import { Link } from 'react-router-dom';
 
