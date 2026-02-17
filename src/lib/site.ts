@@ -8,5 +8,5 @@ export const site = {
   github: 'https://github.com/oyinlola-tech',
   linkedin: 'https://linkedin.com/in/oluwayemioyinlola',
   twitter: 'https://twitter.com/oyinlola141',
-  website: 'https://oyinlola.site',
+  website: 'https://www.oyinlola.site',
 };

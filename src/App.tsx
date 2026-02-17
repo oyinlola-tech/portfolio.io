@@ -14,7 +14,7 @@ import { ZudomartPage } from './pages/ZudomartPage';
 import { ContactPage } from './pages/ContactPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 
-const CANONICAL_ORIGIN = 'https://oyinlola.site';
+const CANONICAL_ORIGIN = 'https://www.oyinlola.site';
 
 function normalizePathname(pathname: string): string {
   if (!pathname) {
