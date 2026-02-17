@@ -161,7 +161,7 @@ export function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full font-['Fira_Code'] font-medium text-white bg-[#c778dd] px-6 py-3 hover:bg-opacity-90 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full font-['Fira_Code'] font-medium text-white bg-[#8f3db2] px-6 py-3 hover:bg-[#7c349b] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? 'Sending...' : 'Send message'}
               </button>
