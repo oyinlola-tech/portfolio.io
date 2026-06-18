@@ -5,7 +5,7 @@
 If you'd like a quick preview, open `index.html` in your browser or serve the folder with a simple static server.
 
 --- 
-
+ 
 ## Quick links
 
 - Live demo: (if deployed) — check your GitHub Pages / Vercel deployment
